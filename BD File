@@ -1,6 +1,14 @@
-### Open a .db file:
-## Reference: http://johnatten.com/2014/12/07/installing-and-using-sqlite-on-windows/#Getting-Started---Using-SQLite-on-Windows
+## Import .csv data to Heidi:
+1. Open the .csv file in UE
+2. Convert to hexadecimal display: Control + H
+3. Convert empty fileds to '\N'
+   Control + R (replace)
+   2C 2C --> 2C 5C 4E 2C, e.g. ,, --> ,\N,
+   2C 0D 0A --> 2C 5C 4E 0D 0A, e.g. ,\r\n --> ,\N\r\n
+4. Import .csv file, with lines terminated by \r\n
 
+## Open a .db file:
+## Reference: http://johnatten.com/2014/12/07/installing-and-using-sqlite-on-windows/#Getting-Started---Using-SQLite-on-Windows
 1. Download the sqlite3 (including sqlite.def, sqlite3.dll, sqlite3.exe, add the path to environment variables)
 2. In command prompt, cd to the directory with .db file
 3. Type commands:
