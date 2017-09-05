@@ -1,0 +1,9 @@
+### Open a .db file:
+1. Download the sqlite3 (including sqlite.def, sqlite3.dll, sqlite3.exe, add the path to environment variables) \\
+2. In command prompt, cd to the directory with .db file \\ 
+3. Type commands: \\
+   sqlite3
+   .open DBNAME.db
+   .tables
+   select * from TABLENAME limit 10
+4. GUI-Based Tools: sqlitebrowser
