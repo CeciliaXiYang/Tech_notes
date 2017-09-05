@@ -9,3 +9,10 @@
    .tables
    select * from TABLENAME limit 10
 4. GUI-Based Tools: sqlitebrowser
+
+## Access and manipulate data
+1. Create a table (by copying another table):
+   CREATE TABLE TABLENAME AS
+   SELECT * FROM TABLETAMPLATE;
+2. Delete all rows in a table:
+   DELETE FROM TABLENAME;
