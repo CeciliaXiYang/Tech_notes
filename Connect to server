@@ -48,4 +48,11 @@ Questons:
 
 Jypyter notebook on server：
 
-ssh user@host -L3129:localhost:10005 "jupyter notebook"
+1. Set up a SSL tunnel: ssh me@remote.address -L127.0.0.1:3129:127.0.0.1:2018
+
+2. Start server
+
+3. jupyter notebook
+
+4. Visit the server by: http://localhost:3129
+
