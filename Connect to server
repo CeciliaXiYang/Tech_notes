@@ -52,7 +52,7 @@ Jypyter notebook on server：
 
 2. Start server
 
-3. jupyter notebook
+3. $ jupyter notebook
 
 4. Visit the server by: http://localhost:3129
 
