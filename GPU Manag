@@ -39,5 +39,6 @@
     
   Close interacitve sessions active on other processes (For jupyter notebook, restart the kernels)
  
-6 If a TensorFlow operation has both CPU and GPU implementations, the GPU devices will be given priority when the operation is assigned to a device.
+6 If a TensorFlow operation has both CPU and GPU implementations, 
+  the GPU devices will be given priority when the operation is assigned to a device.
 
