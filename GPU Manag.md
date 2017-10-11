@@ -1,5 +1,5 @@
 ## GPU monitoring  
-  nvidia-smi  
+  `nvidia-smi`  
 
 ## Show all processes using GPU  
   `ps -ef | grep python`  
@@ -32,11 +32,13 @@
   ```
   
 ## Select a certain GPU to use
+  ```
   import os
   os.environ['CUDA_VISIBLE_DEVICES'] = '0' % Select the gpu_0 to use
+  ```
   
-  Refer to: https://www.cnblogs.com/darkknightzh/p/6591923.html
-            http://www.acceleware.com/blog/cudavisibledevices-masking-gpus
+  Refer to: https://www.cnblogs.com/darkknightzh/p/6591923.html  
+            http://www.acceleware.com/blog/cudavisibledevices-masking-gpus  
   Q: When selecting the gpu, it would occupy the whole memory of that gpu to use?? How to solve this?  
   
 ## TensorFlow: InternalError: Blas SGEMM launch failed  
