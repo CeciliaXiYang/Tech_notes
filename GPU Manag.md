@@ -31,7 +31,7 @@
   session = tf.Session(config = config)
   ```
   
-## Select a certain GPU to use:
+## Select a certain GPU to use
   import os
   os.environ['CUDA_VISIBLE_DEVICES'] = '0' % Select the gpu_0 to use
   
