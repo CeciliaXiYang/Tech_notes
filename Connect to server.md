@@ -7,6 +7,7 @@
    ```
 
 - Check which python in use  
+
    Anaconda has been installed in the server with pkgs. However, the default python version is in /usr/bin/python  
    Command `which python` could check which python we are using   
 
@@ -17,8 +18,8 @@
    source ~/.bash_profile
    ```
    
-- Check the added path  
-   `echo $PATH`  
+- Check the added path: `echo $PATH`  
+   
    `/opt/Anaconda2/bin` has been added into the front of the PATH  
 
    * folder in front of the PATH would be taken as the default version  
