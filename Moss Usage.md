@@ -3,6 +3,7 @@ Homepage: https://theory.stanford.edu/~aiken/moss/
 
 # Description:  
    MOSS(Measure of Software Similarity)  
+   
    Submission process:   
     1) Payload is checked and uploaded to the central server  
     2) Once all files uploaded, a session query is submitted  
@@ -12,8 +13,10 @@ Homepage: https://theory.stanford.edu/~aiken/moss/
 
 ## Registration:  
   send an email to moss@moss.stanford.edu, with the exact content of:  
+  ```
   registeruser  
   mail username@domain  
+  ```
   
 ## Receive an email with the perl script  
   Create a file named as moss.pl with the script  
@@ -54,5 +57,5 @@ Homepage: https://theory.stanford.edu/~aiken/moss/
   
   E.g perl moss.pl -l python -d */*py  
   
-5 Access the results URL: http://moss.stanford.edu/results/XXXXXXXX  
+## Access the results URL: http://moss.stanford.edu/results/XXXXXXXX  
   
