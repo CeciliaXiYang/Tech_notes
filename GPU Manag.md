@@ -39,11 +39,12 @@
             http://www.acceleware.com/blog/cudavisibledevices-masking-gpus
   Q: When selecting the gpu, it would occupy the whole memory of that gpu to use?? How to solve this? 
 
-## Check GPU or CPU in use:
+## Check GPU or CPU in use
   ```
   import tensorflow as tf
   sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))  
   ```
+  If a TensorFlow operation has both CPU and GPU implementations, the GPU devices will be given priority when the operation is assigned to a device.  
   
 ## TensorFlow: InternalError: Blas SGEMM launch failed  
   ```
@@ -53,9 +54,6 @@
   ```
   
   Close interacitve sessions active on other processes (For jupyter notebook, restart the kernels)  
- 
-## If a TensorFlow operation has both CPU and GPU implementations, 
-  the GPU devices will be given priority when the operation is assigned to a device.
 
 ## CUDA_OUT_OF_MEMORY warning  
   By default, tensorflow try to allocate a fraction per_process_gpu_memory_fraction of the GPU memory 
