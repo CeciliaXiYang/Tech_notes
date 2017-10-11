@@ -1,3 +1,43 @@
 1 GPU monitoring:
   nvidia-smi 
 
+2 Show all processes using GPU:
+  ps -ef | grep python
+  
+  Refer to: https://askubuntu.com/questions/852206/what-does-ps-efgrep-processname-mean
+  ps: list processes
+  -e: show all processes, not only processes belonging to current user
+  -f: show the full name
+  pass output of "ps -ef" as input of "grep python"
+  grep: find out lines containing "python"
+
+3 Set Tensorflow to use partial of GPU:
+  import tensorflow as tf
+  config = tf.ConfigProto()
+  config.gpu_options.per_process_gpu_memory_fraction = 0.1
+  session = tf.Session(config=config)
+  
+  Refer to: https://www.tensorflow.org/tutorials/using_gpu
+  ** By default, tensorflow maps nearly all of the GPU memory of all GPUs visible to the process.
+  
+  Another option is to allocate as much GPU memory nased on runtime allocations, without releasing memory:
+  config = tf.ConfigProto()
+  config.gpu_options.allow_growth = True
+  session = tf.Session(config = config)
+  
+4 Select a certain GPU to use:
+  import os
+  os.environ['CUDA_VISIBLE_DEVICES'] = '0' % Select the gpu_0 to use
+  
+  Refer to: https://www.cnblogs.com/darkknightzh/p/6591923.html
+  Q: When selecting the gpu, it would occupy the whole memory of that gpu to use?? How to solve this? 
+
+5 TensorFlow: InternalError: Blas SGEMM launch failed
+  if 'session' in locals() and session is not None:
+    print('Close interactive session')
+    session.close()
+    
+  Close interacitve sessions active on other processes (For jupyter notebook, restart the kernels)
+ 
+6 If a TensorFlow operation has both CPU and GPU implementations, the GPU devices will be given priority when the operation is assigned to a device.
+
