@@ -2,6 +2,7 @@
 - Open the .csv file in UE  
 - Convert to hexadecimal display: Control + H  
 - Convert empty fileds to '\N'  
+
    ```
    Control + R (replace)
    2C 2C --> 2C 5C 4E 2C, e.g. ,, --> ,\N,
@@ -15,6 +16,7 @@
 - Download the `sqlite3` (including sqlite.def, sqlite3.dll, sqlite3.exe, add the path to environment variables)  
 - In command prompt, cd to the directory with .db file  
 - Type commands  
+
    ```
    sqlite3
    .open DBNAME.db
@@ -25,11 +27,13 @@
 
 ## Access and manipulate data  
 - Create a table (by copying another table)  
+
    ```
    CREATE TABLE TABLENAME AS
    SELECT * FROM TABLETAMPLATE
    ```
 - Delete all rows in a table  
+
    ```
    DELETE FROM TABLENAME
    ```
