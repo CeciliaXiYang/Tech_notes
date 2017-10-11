@@ -12,7 +12,7 @@
 ## Open a .db file  
    Reference:  
    http://johnatten.com/2014/12/07/installing-and-using-sqlite-on-windows/#Getting-Started---Using-SQLite-on-Windows  
-- Download the sqlite3 (including sqlite.def, sqlite3.dll, sqlite3.exe, add the path to environment variables)  
+- Download the `sqlite3` (including sqlite.def, sqlite3.dll, sqlite3.exe, add the path to environment variables)  
 - In command prompt, cd to the directory with .db file  
 - Type commands  
    ```
@@ -21,7 +21,7 @@
    .tables
    select * from TABLENAME limit 10
    ```
-- GUI-Based Tools: sqlitebrowser  
+- GUI-Based Tools: `sqlitebrowser`  
 
 ## Access and manipulate data  
 - Create a table (by copying another table)  
