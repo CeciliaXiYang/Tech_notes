@@ -1,7 +1,7 @@
 Reference: http://lightonphiri.org/blog/student-programming-plagiarism-dectection-using-moss  
 Homepage: https://theory.stanford.edu/~aiken/moss/  
 
-# Description:  
+# Description   
    MOSS(Measure of Software Similarity)  
    
    Submission process:   
@@ -9,9 +9,9 @@ Homepage: https://theory.stanford.edu/~aiken/moss/
     2) Once all files uploaded, a session query is submitted  
     3) Central server returns the results in form of URL string: http://moss.stanford.edu/results/XXXXXXXX  
 
-# Procedures:  
+# Procedures  
 
-## Registration:  
+## Registration    
   send an email to moss@moss.stanford.edu, with the exact content of:  
   ```
   registeruser  
@@ -21,7 +21,7 @@ Homepage: https://theory.stanford.edu/~aiken/moss/
 ## Receive an email with the perl script  
   Create a file named as moss.pl with the script  
 
-## Payload cleaning:  
+## Payload cleaning  
   ```
   #!/usr/bin/bash  
   # clean up resource folks  
@@ -44,7 +44,7 @@ Homepage: https://theory.stanford.edu/~aiken/moss/
   ```  
   ** _MACOSX files: the result of Apple storing Resource Forks safe manner  
   
-## Submission script:  
+## Submission script  
   `usage: moss [-x] [-l language] [-d] [-b basefile1] ... [-b basefilen] [-m #] [-c "string"] file1 file2 file3`  
   
   -b Used to specify reference/base source code file  
@@ -57,5 +57,6 @@ Homepage: https://theory.stanford.edu/~aiken/moss/
   
   E.g perl moss.pl -l python -d */*py  
   
-## Access the results URL: http://moss.stanford.edu/results/XXXXXXXX  
+## Access the results URL  
+   http://moss.stanford.edu/results/XXXXXXXX  
   
