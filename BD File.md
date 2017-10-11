@@ -10,10 +10,11 @@
 - Import .csv file, with lines terminated by \r\n  
 
 ## Open a .db file  
-   Reference: http://johnatten.com/2014/12/07/installing-and-using-sqlite-on-windows/#Getting-Started---Using-SQLite-on-Windows  
+   Reference:  
+   http://johnatten.com/2014/12/07/installing-and-using-sqlite-on-windows/#Getting-Started---Using-SQLite-on-Windows  
 - Download the sqlite3 (including sqlite.def, sqlite3.dll, sqlite3.exe, add the path to environment variables)  
 - In command prompt, cd to the directory with .db file  
-- Type commands:  
+- Type commands  
    ```
    sqlite3
    .open DBNAME.db
@@ -30,5 +31,5 @@
    ```
 - Delete all rows in a table  
    ```
-   DELETE FROM TABLENAME;
+   DELETE FROM TABLENAME
    ```
