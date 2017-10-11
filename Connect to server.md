@@ -8,7 +8,7 @@
 
 - Check which python in use  
 
-   Anaconda has been installed in the server with pkgs. However, the default python version is in /usr/bin/python  
+   Anaconda has been installed in the server with pkgs. However, the default python version is in `/usr/bin/python` 
    Command `which python` could check which python we are using   
 
 - Set the environment variable  
@@ -24,7 +24,7 @@
 
    * folder in front of the PATH would be taken as the default version  
 
-##Method2  
+## Method2  
 
   `alias python='/opt/Anaconda2/bin/python2.7'`  
 
