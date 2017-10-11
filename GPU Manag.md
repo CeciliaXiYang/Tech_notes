@@ -37,14 +37,7 @@
   
   Refer to: https://www.cnblogs.com/darkknightzh/p/6591923.html
             http://www.acceleware.com/blog/cudavisibledevices-masking-gpus
-  Q: When selecting the gpu, it would occupy the whole memory of that gpu to use?? How to solve this? 
-
-## Check GPU or CPU in use
-  ```
-  import tensorflow as tf
-  sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))  
-  ```
-  If a TensorFlow operation has both CPU and GPU implementations, the GPU devices will be given priority when the operation is assigned to a device.  
+  Q: When selecting the gpu, it would occupy the whole memory of that gpu to use?? How to solve this?  
   
 ## TensorFlow: InternalError: Blas SGEMM launch failed  
   ```
@@ -60,8 +53,15 @@
   to his process to avoid costly memory management. The default behavior takes ~95% of the memory. 
   
   Reference: https://stackoverflow.com/questions/39465503/cuda-error-out-of-memory-in-tensorflow
+ 
+## Check tensorflow GPU or CPU in use
+  ```
+  import tensorflow as tf
+  sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))  
+  ```
+  If a TensorFlow operation has both CPU and GPU implementations, the GPU devices will be given priority when the operation is assigned to a device.  
   
-## Check theano use GPU or CPU:
+## Check theano GPU or CPU in use  
   ```
   from theano import function, config, shared, tensor
   import numpy
