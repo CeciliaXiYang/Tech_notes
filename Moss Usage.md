@@ -5,9 +5,10 @@ Homepage: https://theory.stanford.edu/~aiken/moss/
    MOSS(Measure of Software Similarity)  
    
    Submission process:   
-    1) Payload is checked and uploaded to the central server  
-    2) Once all files uploaded, a session query is submitted  
-    3) Central server returns the results in form of URL string: http://moss.stanford.edu/results/XXXXXXXX  
+   
+   - Payload is checked and uploaded to the central server  
+   - Once all files uploaded, a session query is submitted  
+   - Central server returns the results in form of URL string: http://moss.stanford.edu/results/XXXXXXXX  
 
 # Procedures  
 
