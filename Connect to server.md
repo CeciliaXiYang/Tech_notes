@@ -34,7 +34,7 @@
 
    Queston: Difference between `~/.bashrc` and `~/.bash_profile`  
 
-## Jypyter notebook on server  
+## Jupyter notebook on server
 
    - Set up a SSL tunnel: `ssh me@remote.address -L127.0.0.1:3129:127.0.0.1:2018`  
    - Start server  
