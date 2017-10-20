@@ -1,2 +1,4 @@
-1 Change file permissions:  
+1)  Change file permissions:  
+
 Reference: https://help.ubuntu.com/community/FilePermissions#Changing_Permissions
+
