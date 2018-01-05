@@ -12,11 +12,10 @@ Steps:
    python setup.py install
    
 3) Test if environment has been successfully configured with following code in python: 
-
-```
-import matlab.engine
-eng = matlab.engine.start_matlab()
-tf = eng.isprime(37)
-print(tf)
-eng.eval("figure", nargout=0) # To show graphics figure
-```
+   ```
+   import matlab.engine
+   eng = matlab.engine.start_matlab()
+   tf = eng.isprime(37)
+   print(tf)
+   eng.eval("figure", nargout=0) # To show graphics figure
+   ```
