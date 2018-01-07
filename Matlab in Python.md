@@ -8,7 +8,7 @@ Steps:
    
 2) cmd as an administrator, run the following commands:  
    ```
-   cd C:\Program Files\MATLAB\R2016a   
+   cd C:\Program Files\MATLAB\R2017b   
    cd extern\engines\python  
    python setup.py install  
    ```
