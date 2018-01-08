@@ -1,6 +1,7 @@
 Tool: MATLAB Engine for Python  
 Python version: python2.7, 3.3, 3.4, 3.5  
 Reference: https://www.youtube.com/watch?v=yhnB7zWgi_Q  
+           https://blog.wqlin.me/2017/01/11/call-matlab-from-python/   
 
 Steps:
 1) `matlabroot` in MATLAB command window
