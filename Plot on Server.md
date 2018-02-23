@@ -3,7 +3,7 @@
 ```
 import matplotlib.pyplot as plt
 plt.switch_backend('agg')
-# %matplotlib inline --> by jupyter notebook  
+# %matplotlib inline --> for jupyter notebook  
 
 plt.figure(0, figsize=(8, 5))
 plt.plot(fpr, tpr, lw=2, label= ': AUC = %0.4f' % roc_auc)  
