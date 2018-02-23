@@ -19,3 +19,5 @@ plt.legend(loc="lower right", bbox_to_anchor=(1,0))
 plt.savefig(savefig_path, bbox_inches='tight', dpi=300)
 plt.show()
 ```
+
+Ref: https://stackoverflow.com/questions/4706451/how-to-save-a-figure-remotely-with-pylab/4706614#4706614
