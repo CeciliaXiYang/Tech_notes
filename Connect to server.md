@@ -34,8 +34,10 @@
 
    Queston: Difference between `~/.bashrc` and `~/.bash_profile`  
 
-## Jupyter notebook on server
+## Anaconda on server: 
+   reference: https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart
 
+## Jupyter notebook on server
    - Set up a SSL tunnel: `ssh me@remote.address -L127.0.0.1:3129:127.0.0.1:2018`  
    - Start server  
    - `$ jupyter notebook`  
