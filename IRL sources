@@ -1,6 +1,31 @@
-GP: https://github.ncsu.edu/RL-Framework/Bayesian-RL
+RL related paper: https://spinningup.readthedocs.io/zh_CN/latest/spinningup/keypapers.html 
+https://github.com/makokal/funzo 
+
+GP: https://github.ncsu.edu/RL-Framework/Bayesian-RL 
+
+BIRL: 
+https://github.com/erensezener/aima-based-irl 
+
 
 zhihu: 
 https://zhuanlan.zhihu.com/p/33534968 
+https://zhuanlan.zhihu.com/p/33663492 
+https://zhuanlan.zhihu.com/p/26766494 
+https://zhuanlan.zhihu.com/p/26682811 
+https://zhuanlan.zhihu.com/p/26855870 
+https://zhuanlan.zhihu.com/p/69284460 
+https://zhuanlan.zhihu.com/p/28870552 
 
-https://zhuanlan.zhihu.com/p/33663492
+
+MCMC: 
+https://zhuanlan.zhihu.com/p/37121528 
+https://zhuanlan.zhihu.com/p/32982140 
+https://www.cnblogs.com/pinard/p/6625739.html 
+
+Max-likelihood IRL: 
+https://github.com/yrevar/InverseRL/blob/master/MLIRL/MLIRL.py 
+
+IRL tutorial: 
+https://thinkingwires.com/posts/2018-02-13-irl-tutorial-1.html 
+https://github.com/JohannesHeidecke/irl-benchmark/tree/master/irl_benchmark 
+https://github.com/MatthewJA/Inverse-Reinforcement-Learning 
