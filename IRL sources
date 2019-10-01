@@ -5,7 +5,8 @@ GP: https://github.ncsu.edu/RL-Framework/Bayesian-RL
 
 BIRL: 
 https://github.com/erensezener/aima-based-irl 
-
+https://medium.com/@sedleku/bayesian-inverse-reinforcement-learning-c2c9f9576e0d 
+https://github.com/crslab/birl 
 
 zhihu: 
 https://zhuanlan.zhihu.com/p/33534968 
@@ -24,6 +25,7 @@ https://www.cnblogs.com/pinard/p/6625739.html
 
 Max-likelihood IRL: 
 https://github.com/yrevar/InverseRL/blob/master/MLIRL/MLIRL.py 
+https://github.com/yrevar/inverse_rl/tree/master/irl/mlirl 
 
 IRL tutorial: 
 https://thinkingwires.com/posts/2018-02-13-irl-tutorial-1.html 
