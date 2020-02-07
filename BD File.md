@@ -37,3 +37,26 @@
    ```
    DELETE FROM TABLENAME
    ```
+
+## Load a .bak file into the MySQL 
+- .bak file is a backup of the data. It cannot be directly imported into the MySQL
+- Preparations: 
+   1) Intall the SQL Server and MySQL
+   
+
+- Steps:
+   A detailed tutorial for the data migration from SQL Server to MySQL: 
+   https://mysqlworkbench.org/2012/07/migrating-from-ms-sql-server-to-mysql-using-workbench-migration-wizard/ 
+   
+- Important settings: 
+   1) Set up the as username and password in SQL Server
+      - Secruity --> 
+   
+   2) In SQL Server Configuration manager 
+   
+   
+   3) 
+   
+
+
+- Settings: 
