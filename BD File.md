@@ -40,15 +40,15 @@
 
 ## Load a .bak file into the MySQL 
 - .bak file is a backup of the data. It cannot be directly imported into the MySQL
-- Preparations: 
+- **Preparations:** 
    1) Intall the SQL Server and MySQL
    
 
-- Steps:
+- **Steps:**
    A detailed tutorial for the data migration from SQL Server to MySQL: 
    https://mysqlworkbench.org/2012/07/migrating-from-ms-sql-server-to-mysql-using-workbench-migration-wizard/ 
    
-- Important settings: 
+- **Important settings:** 
    1) Set up the as username and password in SQL Server
       - Secruity --> Logins --> Right click sa properties
       - Reset the password
@@ -72,4 +72,3 @@
       - Click Alias tab, fill in server alias, choose TCP/IP Network libraries, and fill in SQL Server IP in Server name
       - Now the remote server can be connected by server name
       
-   
