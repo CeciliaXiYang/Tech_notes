@@ -52,8 +52,7 @@
    1) Set up the as username and password in SQL Server
       - Secruity --> Logins --> Right click sa properties
       - Reset the password
-      - Click Status tab： Set "Permission to connect to database engine" --> "Grant" and "Login" --> "Enabled" 
-      
+      - Click Status tab： Set "Permission to connect to database engine" --> "Grant" and "Login" --> "Enabled"
       - Right click server properties: Set "Server authentication" --> "SQL Server and Windows Authentication mode" and "Login auditing" --> "Successful logins only"
    
    2) In SQL Server Configuration manager 
@@ -70,7 +69,7 @@
       Reason: The server name has not been set up as the alias for the IP address
       - Search for 'cliconfg.exe'
       - Create TCP/IP alias --> Enable the TCP/IP and make sure there is no Named Piped in the list (right side)
-      - Click Alias tab, fill in server alias, choose TCP/IP Network libraries, and fill in SQL Server IP in Server name space
+      - Click Alias tab, fill in server alias, choose TCP/IP Network libraries, and fill in SQL Server IP in Server name
       - Now the remote server can be connected by server name
       
    
