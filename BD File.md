@@ -50,13 +50,27 @@
    
 - Important settings: 
    1) Set up the as username and password in SQL Server
-      - Secruity --> 
+      - Secruity --> Logins --> Right click sa properties
+      - Reset the password
+      - Click Status tab： Set "Permission to connect to database engine" --> "Grant" and "Login" --> "Enabled" 
+      
+      - Right click server properties: Set "Server authentication" --> "SQL Server and Windows Authentication mode" and "Login auditing" --> "Successful logins only"
    
    2) In SQL Server Configuration manager 
+      - In "SQL Server Network Configuration" --> "protocols for MSSQLSERVER", set TCP/IP as enabled
+      - Right Click the TCP/IP properties --> Check the IP address, the TCP port in IPAll is set as '1433'
+      - In "SQL Server Services", ensure the instances have the running state
    
+   3) Firewall settings: allow SQL server to communicate through windows defender firewall
+      - Open windows defender firewall, add "C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Binn\sqlservr.exe"
    
-   3) 
+   4) Restart the SQL Server using services.msc
    
-
-
-- Settings: 
+   5) Fix the error "SQL Server does not exist or access denied Fixed" --> Create alias on client side
+      Reason: The server name has not been set up as the alias for the IP address
+      - Search for 'cliconfg.exe'
+      - Create TCP/IP alias --> Enable the TCP/IP and make sure there is no Named Piped in the list (right side)
+      - Click Alias tab, fill in server alias, choose TCP/IP Network libraries, and fill in SQL Server IP in Server name space
+      - Now the remote server can be connected by server name
+      
+   
