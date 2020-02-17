@@ -72,3 +72,26 @@
       - Click Alias tab, fill in server alias, choose TCP/IP Network libraries, and fill in SQL Server IP in Server name
       - Now the remote server can be connected by server name
       
+- **Q&A when setting up DB on server: **
+   1) Q: How to fix phpMyAdmin 403 forbidden error? 
+      A: Update the access permission of the file etc/httpd/conf.d/phpMyAdmin.conf: 
+         `sudo chmod -R 755 phpMyAdmin.conf`
+         Besides, `sudo vim phpMyAdmin.conf` and update the content 
+         ```
+         <IfModule mod_authz_core.c>
+           # Apache 2.4
+           <RequireAny>
+             Require all granted
+           </RequireAny>
+         </IfModule>
+         <IfModule !mod_authz_core.c>
+           # Apache 2.2
+           Order Allow,Deny
+           Allow from localhost all
+           Require all granted
+         </IfModule> 
+         ``` 
+   2) 
+      
+      
+      
