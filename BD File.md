@@ -95,7 +95,7 @@
          
    2) Q: How to access the DB on server via localhost? 
       A: Use the xampp app. If the Port 3306 in use by "Unable to open process", open the terminal:  
-         step 1: `sc delete mysql` to terminate the running service 
+         step 1: `sc delete mysql` to terminate the running service  
          step 2: close the xampp control pannel and restart it 
          step 3: click config, a my.ini file will be open. Replace the port 3306 to 3307  
          step 4: open the xampp control panel config, click Service and Port Settings and change the port to 3307 
@@ -103,9 +103,21 @@
          
          Reference: https://www.youtube.com/watch?v=gVWVTsTPxRk 
          
-   3) 
+   3) Q: How to completely remove the MariaDB from server? 
+      A: `sudo yum remove mariadb mariadb-server`  
+         `rm -rf /var/lib/mysql`  
+         `rm /etc/my.cnf`  
+         `rm ~/.my.cnf`  
          
+         Reference: https://stackoverflow.com/questions/33362904/completely-remove-mariadb-or-mysql-from-centos-7-or-rhel-7  
          
-         
+   4) Q: Error getting repository data for epel, repository not found 
+      A: This means the repo "epel" was not configured.  
+         `rpm -Uvh http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm`  
+         `sudo rpm -ivh epel-release-6-8.noarch.rpm`  
+         `sudo yum.repo.d/epel.repo`  
+         The rpm file is from: baseurl=http://download.fedoraproject.org/pub/epel/7/$basearch
       
+         Reference: https://unix.stackexchange.com/questions/252410/error-getting-repository-data-for-epel-repository-not-found/284503  
       
+   
