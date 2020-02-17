@@ -94,10 +94,10 @@
          Reference: https://bobcares.com/blog/phpmyadmin-403-forbidden-error/ 
          
    2) Q: How to access the DB on server via localhost? 
-      A: Use the xampp app. If the Port 3306 in use by "Unable to open process", open the terminal: 
+      A: Use the xampp app. If the Port 3306 in use by "Unable to open process", open the terminal:  
          step 1: `sc delete mysql` to terminate the running service 
-         step 2: close the xampp control pannel and restart it
-         step 3: click config, a my.ini file will be open. Replace the port 3306 to 3307 
+         step 2: close the xampp control pannel and restart it 
+         step 3: click config, a my.ini file will be open. Replace the port 3306 to 3307  
          step 4: open the xampp control panel config, click Service and Port Settings and change the port to 3307 
          The web server now can be accessed by: http://localhost/phpmyadmin/ 
          
