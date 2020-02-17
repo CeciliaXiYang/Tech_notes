@@ -120,4 +120,5 @@
       
          Reference: https://unix.stackexchange.com/questions/252410/error-getting-repository-data-for-epel-repository-not-found/284503  
       
-   
+   5) Q: Send a local .sql to remote server 
+      A: Reference: https://www.cnblogs.com/sui776265233/p/10260915.html  
