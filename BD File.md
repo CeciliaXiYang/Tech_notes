@@ -71,7 +71,10 @@
       - Create TCP/IP alias --> Enable the TCP/IP and make sure there is no Named Piped in the list (right side)
       - Click Alias tab, fill in server alias, choose TCP/IP Network libraries, and fill in SQL Server IP in Server name
       - Now the remote server can be connected by server name
-      
+
+- **Export .sql from SQL Server:**  
+   https://stackoverflow.com/questions/15735722/get-sql-file-from-sql-server-2012-database
+
 - **Q&A when setting up DB on server: **
    1) Q: How to fix phpMyAdmin 403 forbidden error?  
       A: Update the access permission of the file etc/httpd/conf.d/phpMyAdmin.conf: 
@@ -103,7 +106,7 @@
          
          Reference: https://www.youtube.com/watch?v=gVWVTsTPxRk 
          
-   3) Q: How to completely remove the MariaDB from server? 
+   3) Q: How to completely remove the MariaDB from server?   
       A: `sudo yum remove mariadb mariadb-server`  
          `rm -rf /var/lib/mysql`  
          `rm /etc/my.cnf`  
@@ -121,4 +124,6 @@
          Reference: https://unix.stackexchange.com/questions/252410/error-getting-repository-data-for-epel-repository-not-found/284503  
       
    5) Q: Send a local .sql to remote server 
-      A: Reference: https://www.cnblogs.com/sui776265233/p/10260915.html  
+      A: Reference: https://www.cnblogs.com/sui776265233/p/10260915.html
+      
+      
