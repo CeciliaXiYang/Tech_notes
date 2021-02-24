@@ -38,8 +38,15 @@
    reference: https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart
 
 ## Jupyter notebook on server
+   Method 1:  
    - Set up a SSL tunnel: `ssh me@remote.address -L127.0.0.1:3129:127.0.0.1:2018`  
    - Start server  
    - `$ jupyter notebook`  
    - Visit the server by: http://localhost:3129
-
+   
+   Method 2:  
+   - Reference: https://www.jianshu.com/p/8fc3cd032d3c 
+   - Server：jupyter notebook --no-browser --port=8889
+   - Local: ssh -N -f -L localhost:3130:localhost:8889 yxi2@squirrelhill.csc.ncsu.edu
+   - Open the browser: http://localhost:3130/tree
+   
